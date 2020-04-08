@@ -134,8 +134,12 @@ main {
   margin-left: 0 !important;
 }
 
+.navbar:hover .logo .link-text {
+  color: var(--theme);
+}
+
 .navbar:hover .logo svg {
-  color: var(--theme) !important;
+  color: var(--theme);
 }
 
 .navbar:hover .logo .fa-angle-right {
@@ -145,4 +149,21 @@ main {
 
 .navbar:hover .logo .gus-underline {
   margin-right: 6px !important;
+}
+
+.blink {
+  animation: blink-animation 1s steps(2, start) infinite;
+  -webkit-animation: blink-animation 1s steps(2, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
