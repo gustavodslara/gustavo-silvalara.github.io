@@ -29,10 +29,6 @@ body::-webkit-scrollbar-thumb {
   background: var(--theme);
 }
 
-main {
-  padding: 1rem;
-}
-
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
@@ -208,4 +204,23 @@ main {
   .item-link:hover .link-text {
     transition: var(--transition-speed-s);
   }
+}
+html,
+body,
+main {
+  height: 100vh;
+}
+
+.page1,
+.page2,
+.page3,
+.page4 {
+  height: 100vh;
+  padding: 1rem;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+section h1 {
+  margin-top: 0;
 }
