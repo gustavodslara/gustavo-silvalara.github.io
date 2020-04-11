@@ -160,6 +160,7 @@ body::-webkit-scrollbar-thumb {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+    z-index: 9999;
   }
 
   .logo {
@@ -267,7 +268,7 @@ section h1 {
   text-align: center;
   flex-direction: row;
   justify-content: center;
-  z-index: 9999;
+  z-index: 999;
   position: absolute;
 }
 
