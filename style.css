@@ -243,6 +243,18 @@ section h1 {
   color: #6cd6ee;
 }
 
+.yellow {
+  color: #f1fa8c;
+}
+
+.orange {
+  color: #ffb86c;
+}
+
+.purple {
+  color: #835ada;
+}
+
 .page1 .container p {
   color: white;
 }
@@ -278,4 +290,15 @@ section h1 {
   -o-filter: blur(1.25px);
   -ms-filter: blur(1.25px);
   filter: blur(1.25px);
+  color: white;
+  z-index: 1;
+  position: absolute;
+}
+
+.codigo p {
+  margin-top: 0;
+}
+
+.no-margin-bt {
+  margin-bottom: 0;
 }
