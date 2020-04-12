@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gustavo Lara</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="assets/svgs/terminal-solid.svg"
+    />
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link
@@ -234,10 +239,35 @@
             <span class="green">Injectable</span>
             <span>( )</span>
           </p>
-          <p>
+          <p class="no-margin-bt">
             <span class="pink">export class </span>
             <span class="blue">UserProvider </span>
             <span>{</span>
+          </p>
+          <p class="indentacao">
+            <span class="pink">constructor</span>
+            <span>(</span>
+            <span class="pink">public </span>
+            <span class="orange">http</span>
+            <span class="pink">: </span>
+            <span class="blue"> Http</span>
+            <span>) { }</span>
+          </p>
+          <p class="indentacao no-margin-bt">
+            <span class="green">getUsers</span>
+            <span>( ) {</span>
+          </p>
+          <p class="indentacao2 no-margin-bt">
+            <span class="pink">return </span>
+            <span class="purple">this</span>
+            <span>.http</span>
+          </p>
+          <p class="indentacao3 no-margin-bt">
+            <span>.</span>
+            <span class="green">get</span>
+            <span>(</span>
+            <span class="yellow">"https://localhost:3001/users"</span>
+            <span>)</span>
           </p>
         </div>
         <div class="container">

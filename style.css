@@ -302,3 +302,15 @@ section h1 {
 .no-margin-bt {
   margin-bottom: 0;
 }
+
+.indentacao {
+  margin-left: 1rem;
+}
+
+.indentacao2 {
+  margin-left: 2rem;
+}
+
+.indentacao3 {
+  margin-left: 3rem;
+}
