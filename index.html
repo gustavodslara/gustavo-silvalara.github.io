@@ -9,8 +9,7 @@
       type="image/svg+xml"
       href="assets/svgs/terminal-solid.svg"
     />
-    <script defer src="script.js"></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap"
       rel="stylesheet"
@@ -225,26 +224,50 @@
     </nav>
     <main>
       <section id="inicio" class="page1">
+        <div class="container" id="scene">
+          <div class="conteudo" data-depth="0.9">
+            <div>
+              <h1>
+                <span class="pink">Olá, </span>
+                <span class="green">me chamo</span>
+                <span class="blue">Gustavo</span>
+              </h1>
+              <p>
+                Sou desenvolvedor full-stack, estou no 5º semestre de Sistemas
+                para Internet no IFMT
+              </p>
+              <p>
+                Gosto de estudar, praticar e aprender novas tecnologias
+                <span>&#129488;</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="stack" class="page2">
         <div class="codigo">
           <p><br /></p>
-          <p>
+          <p class="to-reveal">
             <span class="pink">import </span>
             <span> { Injectable, Http, Headers } </span>
             <span class="pink"> from </span>
             <span class="yellow">"@angular/core"</span>
             <span>;</span>
           </p>
-          <p class="no-margin-bt">
+          <br />
+          <p class="no-margin-bt to-reveal1">
             <span>@</span>
             <span class="green">Injectable</span>
             <span>( )</span>
           </p>
-          <p class="no-margin-bt">
+          <br />
+          <p class="no-margin-bt to-reveal1-5">
             <span class="pink">export class </span>
             <span class="blue">UserProvider </span>
             <span>{</span>
           </p>
-          <p class="indentacao">
+          <br />
+          <p class="indentacao to-reveal2">
             <span class="pink">constructor</span>
             <span>(</span>
             <span class="pink">public </span>
@@ -253,47 +276,148 @@
             <span class="blue"> Http</span>
             <span>) { }</span>
           </p>
-          <p class="indentacao no-margin-bt">
+          <br />
+          <p class="indentacao no-margin-bt to-reveal2-5">
             <span class="green">getUsers</span>
             <span>( ) {</span>
           </p>
-          <p class="indentacao2 no-margin-bt">
+          <br />
+          <p class="indentacao2 no-margin-bt to-reveal3">
             <span class="pink">return </span>
-            <span class="purple">this</span>
+            <span class="purple littlelessmarginright">this</span>
             <span>.http</span>
           </p>
-          <p class="indentacao3 no-margin-bt">
-            <span>.</span>
+          <br />
+          <p class="indentacao3 no-margin-bt to-reveal3-5">
+            <span class="littlelessmarginright">.</span>
             <span class="green">get</span>
             <span>(</span>
             <span class="yellow">"https://localhost:3001/users"</span>
             <span>)</span>
           </p>
+          <br />
+          <p class="indentacao3 no-margin-bt to-reveal4">
+            <span class="littlelessmarginright">.</span>
+            <span class="green">map</span>
+            <span>( (</span>
+            <span class="orange">res</span>
+            <span>) </span>
+            <span class="pink"> => </span>
+            <span>res.</span>
+            <span class="green">json</span>
+            <span>( ) );</span>
+          </p>
+          <br />
+          <p class="indentacao to-reveal4-5">
+            <span>}</span>
+          </p>
+          <br />
+          <p class="indentacao no-margin-bt to-reveal5">
+            <span class="green">getUser</span>
+            <span>(</span>
+            <span class="orange">id</span>
+            <span class="pink">:</span>
+            <span class="blue">number</span>
+            <span>) {</span>
+          </p>
+          <br />
+          <p class="indentacao2 no-margin-bt to-reveal5-5">
+            <span class="pink">return </span>
+            <span class="purple littlelessmarginright">this</span>
+            <span>.http</span>
+          </p>
+          <br />
+          <p class="indentacao3 no-margin-bt to-reveal6">
+            <span class="littlelessmarginright">.</span>
+            <span class="green">get</span>
+            <span>(</span>
+            <span class="yellow">"https://localhost:3001/users/"</span>
+            <span class="pink"> + </span>
+            <span>id )</span>
+          </p>
+          <br />
+          <p class="indentacao3 no-margin-bt to-reveal6-5">
+            <span class="littlelessmarginright">.</span>
+            <span class="green">map</span>
+            <span>( (</span>
+            <span class="orange">res</span>
+            <span>) </span>
+            <span class="pink"> => </span>
+            <span>res.</span>
+            <span class="green">json</span>
+            <span>( ) );</span>
+          </p>
+          <br />
+          <p class="indentacao to-reveal7">
+            <span>}</span>
+          </p>
+          <br />
+          <p class="indentacao no-margin-bt to-reveal7-5">
+            <span class="green">addUser</span>
+            <span>(</span>
+            <span class="orange">username</span>
+            <span class="pink">:</span>
+            <span class="blue littlelessmarginright">string</span>
+            <span>, </span>
+            <span class="orange">password</span>
+            <span class="pink">:</span>
+            <span class="blue">string</span>
+            <span>) {</span>
+          </p>
+          <br />
+          <p class="indentacao2 no-margin-bt to-reveal8">
+            <span class="pink">let </span>
+            <span>credentials</span>
+            <span class="pink"> = </span>
+            <span>{</span>
+          </p>
+          <br />
+          <p class="indentacao3 no-margin-bt to-reveal8-5">
+            <span class="littlelessmarginright">username</span>
+            <span class="pink">:</span>
+            <span class="littlelessmarginright">username</span>
+            <span>,</span>
+          </p>
+          <br />
+          <p class="indentacao3 no-margin-bt to-reveal9">
+            <span class="littlelessmarginright">password</span>
+            <span class="pink">:</span>
+            <span class="littlelessmarginright"> password</span>
+            <span>,</span>
+          </p>
+          <br />
+          <p class="indentacao2 no-margin-bt to-reveal9-5">
+            <span>};</span>
+          </p>
+          <br />
+          <p class="indentacao2 no-margin-bt to-reveal10">
+            <span class="pink">return </span>
+            <span class="purple littlelessmarginright">this</span>
+            <span class="littlelessmarginright">.http.</span>
+            <span class="green">post</span>
+            <span>(</span>
+          </p>
+          <br />
+          <p class="indentacao3 no-margin-bt to-reveal10-5">
+            <span class="yellow littlelessmarginright"
+              >"https://localhost:3001/users"</span
+            >
+            <span>, </span>
+          </p>
+          <br />
+          <p class="indentacao3 no-margin-bt to-reveal11">
+            <span class="purple littlelessmarginright">JSON</span>
+            <span>.</span>
+            <span class="blue">stringify</span>
+            <span>(credentials)</span>
+            <br />
+            <span> );</span>
+          </p>
+          <br />
+          <p class="indentacao to-reveal11-5">
+            <span>}</span>
+          </p>
         </div>
-        <div class="container">
-          <div class="conteudo">
-            <h1>
-              <span class="pink">Olá, </span>
-              <span class="green">me chamo</span>
-              <span class="blue">Gustavo</span>
-            </h1>
-            <p>
-              Sou desenvolvedor full-stack, estou no 5º semestre de Sistemas
-              para Internet no IFMT
-            </p>
-            <p>
-              Gosto de estudar, praticar e aprender novas tecnologias
-              <span>&#129488;</span>
-            </p>
-          </div>
-        </div>
-      </section>
-      <section id="stack" class="page2">
-        <h1>Olá, me chamo Gustavo</h1>
-        <p>
-          Sou desenvolvedor e estou no 5º semestre de Sistemas para Internet no
-          IFMT
-        </p>
       </section>
       <section id="portfolio" class="page3">
         <h1>Olá, me chamo Gustavo</h1>
@@ -310,5 +434,14 @@
         </p>
       </section>
     </main>
+    <script src="js/scroll-out.js"></script>
+    <script src="js/parallax.min.js"></script>
+    <script type="text/javascript">
+      ScrollOut({
+        targets: "p",
+      });
+      var scene = document.getElementById("scene");
+      var parallaxInstance = new Parallax(scene);
+    </script>
   </body>
 </html>
