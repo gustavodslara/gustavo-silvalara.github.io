@@ -79,6 +79,11 @@ body::-webkit-scrollbar-thumb {
   margin-left: 1rem;
 }
 
+.nav-item .link-text {
+  font-size: 1.08rem;
+  letter-spacing: 0.5px;
+}
+
 .item-link svg {
   width: 2rem;
   min-width: 2rem;
@@ -158,11 +163,32 @@ body::-webkit-scrollbar-thumb {
   }
 }
 
+@media only screen and (max-width: 351px) {
+  #trash {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .navbar {
     bottom: 0;
     width: 100vw;
     height: 5rem;
+  }
+
+  .button-curriculo {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    padding: 0;
+  }
+
+  #up,
+  #close {
+    display: none;
+  }
+
+  #prompt {
+    max-width: 100px;
   }
 
   .logo {
@@ -1009,4 +1035,75 @@ section h1 {
 .to-reveal11-5[data-scroll="in"]::before {
   transform: scaleX(0);
   transition-delay: 11.5s;
+}
+
+.button-curriculo {
+  color: #6272a4;
+  display: inline-block;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 0;
+}
+
+.button-curriculo:hover {
+  cursor: pointer;
+  color: white;
+  border-bottom: solid 1px;
+  border-color: var(--theme);
+}
+
+.button-curriculo h4 {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.button-curriculo h4:hover {
+  font-family: "Segoe UI";
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.page4 {
+  padding: 0;
+}
+
+.buttons-curriculo {
+  border-top: solid 1px #bd93f9;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  bottom: 0;
+}
+
+.buttons-curriculo img {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  padding: 4px;
+  margin: 4px;
+}
+
+.buttons-curriculo img#trash {
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
+
+.buttons-curriculo img#close {
+  width: 12px;
+  height: 12px;
+  padding: 4px;
+}
+
+#prompt {
+  margin-left: auto;
+  border: solid 1px #191a21;
+  background-color: #343746;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+  width: 12rem;
 }
