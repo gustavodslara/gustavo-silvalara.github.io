@@ -495,6 +495,36 @@ section h1 {
   }
 }
 
+@media screen and (hover: hover) and (pointer: fine) and (min-width: 450px) and (min-height: 800px) {
+  .card {
+    height: 225px;
+  }
+}
+
+@media screen and (hover: hover) and (pointer: fine) and (min-width: 450px) and (min-height: 970px) {
+  .card {
+    height: 255px;
+  }
+}
+
+@media screen and (hover: hover) and (pointer: fine) and (min-width: 600px) and (min-height: 750px) {
+  .card {
+    height: 300px;
+  }
+}
+
+@media screen and (hover: hover) and (pointer: fine) and (min-width: 750px) and (min-height: 950px) {
+  .card {
+    height: 350px;
+  }
+}
+
+@media screen and (hover: hover) and (pointer: fine) and (min-width: 1200px) and (min-height: 950px) {
+  .card {
+    height: 400px;
+  }
+}
+
 @media screen and (hover: none) and (pointer: coarse) and (min-width: 865px) and (max-width: 920px) {
   .card {
     height: 185px;
