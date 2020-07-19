@@ -1395,6 +1395,7 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 figure.card {
@@ -1402,12 +1403,18 @@ figure.card {
   padding: 0;
   margin: 0;
   display: block;
-  max-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 100%;
 }
 
 figcaption {
   font-weight: 900;
+  font-size: 70%;
+}
+
+figure.card img {
+  max-width: 170px;
+  max-height: 170px;
 }
