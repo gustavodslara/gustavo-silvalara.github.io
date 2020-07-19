@@ -164,7 +164,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 360px) {
-  #trash {
+  #trash,
+  #split {
     display: none;
   }
 
@@ -242,6 +243,11 @@ body::-webkit-scrollbar-thumb {
 
 .contact {
   display: none;
+}
+
+.contact ul {
+  padding: 0;
+  margin: 0;
 }
 
 @media only screen and (max-height: 643px) {
@@ -385,6 +391,9 @@ section h1 {
   color: white;
   z-index: 1;
   position: absolute;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
 .rows-container {
@@ -1376,4 +1385,8 @@ li {
   width: 35px;
   height: 35px;
   color: white;
+}
+
+.stack {
+  max-height: 75% !important;
 }
