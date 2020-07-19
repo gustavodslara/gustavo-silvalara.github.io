@@ -1407,14 +1407,29 @@ figure.card {
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  position: relative;
 }
 
 figcaption {
   font-weight: 900;
   font-size: 70%;
+  bottom: 0;
+  position: absolute;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 741px) and (max-width: 956px) {
+  figcaption {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 956px) {
+  figcaption {
+    font-size: 20px;
+  }
 }
 
 figure.card img {
-  max-width: 170px;
-  max-height: 170px;
+  max-width: 90%;
 }
