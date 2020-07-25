@@ -471,11 +471,33 @@ section h1 {
   .card {
     height: 125px;
   }
+
+  .angular .img-stck {
+    height: 18px !important;
+    width: 18px !important;
+  }
+}
+
+@media screen and (max-width: 550px) and (max-height: 799px) {
+  .img-stck {
+    height: 31px !important;
+    width: 31px !important;
+  }
 }
 
 @media screen and (min-width: 550px) and (max-width: 650px) {
   .card {
     height: 155px;
+  }
+
+  .img-stck {
+    height: 54px;
+    width: 54px;
+  }
+
+  .angular .img-stck {
+    height: 22px !important;
+    width: 22px !important;
   }
 }
 
@@ -483,11 +505,27 @@ section h1 {
   .card {
     height: 165px;
   }
+  .img-stck {
+    height: 67px;
+    width: 67px;
+  }
 }
 
 @media screen and (min-width: 700px) and (max-width: 865px) {
   .card {
     height: 165px;
+  }
+
+  .img-stck {
+    height: 67px;
+    width: 67px;
+  }
+}
+
+@media screen and (max-width: 601px) and (max-width: 749px) {
+  .img-stck {
+    height: 60px !important;
+    width: 60px !important;
   }
 }
 
@@ -1506,6 +1544,67 @@ ul#stack-ul {
 
 .img-stck {
   max-width: 100%;
+}
+
+.angular .img-stck {
+  max-height: 45px;
+}
+
+@media only screen and (max-width: 600px) {
+  .angular .img-stck {
+    max-height: 35px;
+    max-width: 35px;
+  }
+}
+
+@media only screen and (max-width: 449px) {
+  .angular .img-stck {
+    max-height: 16px;
+    max-width: 16px;
+  }
+}
+
+@media only screen and (max-height: 749px) {
+  #stack-ul {
+    height: 100% !important;
+  }
+
+  .angular .img-stck {
+    max-height: 29px;
+    max-width: 29px;
+  }
+
+  .column .card ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+  }
+
+  .img-stck {
+    max-height: 90px;
+    max-width: 90px;
+  }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 1600px) {
+  .angular .img-stck {
+    max-height: 35px;
+    max-width: 35px;
+  }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 900px) {
+  .angular .img-stck {
+    max-height: 22px;
+    max-width: 22px;
+  }
+}
+
+@media only screen and (hover: none) and (pointer: coarse) and (max-width: 750px) {
+  .angular .img-stck {
+    max-height: 16px;
+    max-width: 16px;
+  }
 }
 
 figure.card {
