@@ -417,12 +417,12 @@ section h1 {
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   text-align: center;
   color: white;
   letter-spacing: 2px;
   font-size: 15px;
   background-color: transparent;
+  margin: 5px;
 }
 
 .responsive-img {
