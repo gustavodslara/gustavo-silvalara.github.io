@@ -11,6 +11,12 @@
   --bg-page: #282a36;
 }
 
+.img-port{
+  max-width: 95%;
+  max-height: 95%;
+  border-radius: 10px;
+}
+
 html {
   scroll-behavior: smooth !important;
   overflow-x: hidden;
